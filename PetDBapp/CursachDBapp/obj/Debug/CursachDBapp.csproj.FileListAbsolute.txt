@@ -1,0 +1,48 @@
+C:\Users\fedor\OneDrive\Рабочий стол\CursachDBapp\CursachDBapp\bin\Debug\CursachDBapp.exe.config
+C:\Users\fedor\OneDrive\Рабочий стол\CursachDBapp\CursachDBapp\bin\Debug\CursachDBapp.exe
+C:\Users\fedor\OneDrive\Рабочий стол\CursachDBapp\CursachDBapp\bin\Debug\CursachDBapp.pdb
+C:\Users\fedor\OneDrive\Рабочий стол\CursachDBapp\CursachDBapp\obj\Debug\CursachDBapp.csproj.AssemblyReference.cache
+C:\Users\fedor\OneDrive\Рабочий стол\CursachDBapp\CursachDBapp\obj\Debug\CursachDBapp.csproj.SuggestedBindingRedirects.cache
+C:\Users\fedor\OneDrive\Рабочий стол\CursachDBapp\CursachDBapp\obj\Debug\Forms\AutoForm.g.cs
+C:\Users\fedor\OneDrive\Рабочий стол\CursachDBapp\CursachDBapp\obj\Debug\Forms\MainWindow.g.cs
+C:\Users\fedor\OneDrive\Рабочий стол\CursachDBapp\CursachDBapp\obj\Debug\CursachDBapp_MarkupCompile.cache
+C:\Users\fedor\OneDrive\Рабочий стол\CursachDBapp\CursachDBapp\obj\Debug\CursachDBapp_MarkupCompile.lref
+C:\Users\fedor\OneDrive\Рабочий стол\CursachDBapp\CursachDBapp\obj\Debug\Forms\AutoForm.baml
+C:\Users\fedor\OneDrive\Рабочий стол\CursachDBapp\CursachDBapp\obj\Debug\Forms\MainWindow.baml
+C:\Users\fedor\OneDrive\Рабочий стол\CursachDBapp\CursachDBapp\obj\Debug\CursachDBapp.g.resources
+C:\Users\fedor\OneDrive\Рабочий стол\CursachDBapp\CursachDBapp\obj\Debug\CursachDBapp.Properties.Resources.resources
+C:\Users\fedor\OneDrive\Рабочий стол\CursachDBapp\CursachDBapp\obj\Debug\CursachDBapp.csproj.GenerateResource.cache
+C:\Users\fedor\OneDrive\Рабочий стол\CursachDBapp\CursachDBapp\obj\Debug\CursachDBapp.csproj.CoreCompileInputs.cache
+C:\Users\fedor\OneDrive\Рабочий стол\CursachDBapp\CursachDBapp\obj\Debug\CursachDBapp.exe
+C:\Users\fedor\OneDrive\Рабочий стол\CursachDBapp\CursachDBapp\obj\Debug\CursachDBapp.pdb
+C:\Users\fedor\OneDrive\Рабочий стол\CursachDBapp\CursachDBapp\obj\Debug\App.g.cs
+C:\Users\fedor\OneDrive\Рабочий стол\Учеба\Курсовая работа Автосалон\CursachDBapp\CursachDBapp\bin\Debug\CursachDBapp.exe.config
+C:\Users\fedor\OneDrive\Рабочий стол\Учеба\Курсовая работа Автосалон\CursachDBapp\CursachDBapp\bin\Debug\CursachDBapp.exe
+C:\Users\fedor\OneDrive\Рабочий стол\Учеба\Курсовая работа Автосалон\CursachDBapp\CursachDBapp\bin\Debug\CursachDBapp.pdb
+C:\Users\fedor\OneDrive\Рабочий стол\Учеба\Курсовая работа Автосалон\CursachDBapp\CursachDBapp\obj\Debug\CursachDBapp.csproj.AssemblyReference.cache
+C:\Users\fedor\OneDrive\Рабочий стол\Учеба\Курсовая работа Автосалон\CursachDBapp\CursachDBapp\obj\Debug\CursachDBapp.csproj.SuggestedBindingRedirects.cache
+C:\Users\fedor\OneDrive\Рабочий стол\Учеба\Курсовая работа Автосалон\CursachDBapp\CursachDBapp\obj\Debug\Forms\AutoForm.g.cs
+C:\Users\fedor\OneDrive\Рабочий стол\Учеба\Курсовая работа Автосалон\CursachDBapp\CursachDBapp\obj\Debug\Forms\MainWindow.g.cs
+C:\Users\fedor\OneDrive\Рабочий стол\Учеба\Курсовая работа Автосалон\CursachDBapp\CursachDBapp\obj\Debug\App.g.cs
+C:\Users\fedor\OneDrive\Рабочий стол\Учеба\Курсовая работа Автосалон\CursachDBapp\CursachDBapp\obj\Debug\CursachDBapp_MarkupCompile.cache
+C:\Users\fedor\OneDrive\Рабочий стол\Учеба\Курсовая работа Автосалон\CursachDBapp\CursachDBapp\obj\Debug\CursachDBapp_MarkupCompile.lref
+C:\Users\fedor\OneDrive\Рабочий стол\Учеба\Курсовая работа Автосалон\CursachDBapp\CursachDBapp\obj\Debug\Forms\AutoForm.baml
+C:\Users\fedor\OneDrive\Рабочий стол\Учеба\Курсовая работа Автосалон\CursachDBapp\CursachDBapp\obj\Debug\Forms\MainWindow.baml
+C:\Users\fedor\OneDrive\Рабочий стол\Учеба\Курсовая работа Автосалон\CursachDBapp\CursachDBapp\obj\Debug\CursachDBapp.g.resources
+C:\Users\fedor\OneDrive\Рабочий стол\Учеба\Курсовая работа Автосалон\CursachDBapp\CursachDBapp\obj\Debug\CursachDBapp.Properties.Resources.resources
+C:\Users\fedor\OneDrive\Рабочий стол\Учеба\Курсовая работа Автосалон\CursachDBapp\CursachDBapp\obj\Debug\CursachDBapp.csproj.GenerateResource.cache
+C:\Users\fedor\OneDrive\Рабочий стол\Учеба\Курсовая работа Автосалон\CursachDBapp\CursachDBapp\obj\Debug\CursachDBapp.csproj.CoreCompileInputs.cache
+C:\Users\fedor\OneDrive\Рабочий стол\Учеба\Курсовая работа Автосалон\CursachDBapp\CursachDBapp\obj\Debug\CursachDBapp.exe
+C:\Users\fedor\OneDrive\Рабочий стол\Учеба\Курсовая работа Автосалон\CursachDBapp\CursachDBapp\obj\Debug\CursachDBapp.pdb
+C:\Users\fedor\OneDrive\Рабочий стол\Учеба\Курсовая работа Автосалон\CursachDBapp\CursachDBapp\obj\Debug\Forms\AddCars.g.cs
+C:\Users\fedor\OneDrive\Рабочий стол\Учеба\Курсовая работа Автосалон\CursachDBapp\CursachDBapp\obj\Debug\Forms\Deals.g.cs
+C:\Users\fedor\OneDrive\Рабочий стол\Учеба\Курсовая работа Автосалон\CursachDBapp\CursachDBapp\obj\Debug\Forms\Employees.g.cs
+C:\Users\fedor\OneDrive\Рабочий стол\Учеба\Курсовая работа Автосалон\CursachDBapp\CursachDBapp\obj\Debug\Forms\ManadgerWindow.g.cs
+C:\Users\fedor\OneDrive\Рабочий стол\Учеба\Курсовая работа Автосалон\CursachDBapp\CursachDBapp\obj\Debug\Forms\AddCars.baml
+C:\Users\fedor\OneDrive\Рабочий стол\Учеба\Курсовая работа Автосалон\CursachDBapp\CursachDBapp\obj\Debug\Forms\Deals.baml
+C:\Users\fedor\OneDrive\Рабочий стол\Учеба\Курсовая работа Автосалон\CursachDBapp\CursachDBapp\obj\Debug\Forms\Employees.baml
+C:\Users\fedor\OneDrive\Рабочий стол\Учеба\Курсовая работа Автосалон\CursachDBapp\CursachDBapp\obj\Debug\Forms\ManadgerWindow.baml
+C:\Users\fedor\OneDrive\Рабочий стол\Учеба\Курсовая работа Автосалон\CursachDBapp\CursachDBapp\obj\Debug\Forms\DealsLists.g.cs
+C:\Users\fedor\OneDrive\Рабочий стол\Учеба\Курсовая работа Автосалон\CursachDBapp\CursachDBapp\obj\Debug\Forms\DealsLists.baml
+C:\Users\fedor\OneDrive\Рабочий стол\Учеба\Курсовая работа Автосалон\CursachDBapp\CursachDBapp\obj\Debug\Forms\AddClients.g.cs
+C:\Users\fedor\OneDrive\Рабочий стол\Учеба\Курсовая работа Автосалон\CursachDBapp\CursachDBapp\obj\Debug\Forms\AddClients.baml

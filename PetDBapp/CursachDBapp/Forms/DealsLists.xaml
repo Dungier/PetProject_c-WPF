@@ -1,0 +1,40 @@
+﻿<Window x:Class="CursachDBapp.Forms.DealsLists"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CursachDBapp.Forms"
+        mc:Ignorable="d"
+        Title="DealsLists" Height="450" Width="1400"
+        ResizeMode="NoResize"
+        WindowStyle="None"
+        Background="#124566"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <ListView x:Name="ListViewDeals" Margin="10,0,145,10" Background="Gray" FontSize="10" Foreground="LightBlue" SelectionChanged="ListViewDeals_SelectionChanged">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn x:Name="DealID" DisplayMemberBinding="{Binding DealID}" Header="Номер сделки" Width="80"/>
+                    <GridViewColumn x:Name="DealDate" DisplayMemberBinding="{Binding DealDate}" Header="Дата сделки" Width="80"/>
+                    <GridViewColumn x:Name="CarPrice" DisplayMemberBinding="{Binding CarPrice}" Header="Сумма сделки" Width="80"/>
+                    <GridViewColumn x:Name="CarID" DisplayMemberBinding="{Binding CarID}" Header="Идентификатор автомобиля" Width="140"/>
+                    <GridViewColumn x:Name="CarName" DisplayMemberBinding="{Binding CarName}" Header="Наименование автомобиля" Width="140"/>
+                    <GridViewColumn x:Name="CompanySypplier" DisplayMemberBinding="{Binding CompanySypplier}" Header="Поставщик" Width="80"/>
+                    <GridViewColumn x:Name="CompanySypplierCountry" DisplayMemberBinding="{Binding CarPrice}" Header="Страна поставщик" Width="100"/>
+                    <GridViewColumn x:Name="EmpSeller" DisplayMemberBinding="{Binding EmpSeller}" Header="Сотрудник" Width="80"/>
+                    <GridViewColumn x:Name="EmpSellerStatus" DisplayMemberBinding="{Binding EmpSellerStatus}" Header="Должность сотрудника" Width="120"/>
+                    <GridViewColumn x:Name="Client" DisplayMemberBinding="{Binding Client}" Header="Покупатель" Width="80"/>
+                    <GridViewColumn x:Name="Notary" DisplayMemberBinding="{Binding Notary}" Header="Компания заверитель" Width="120"/>
+                    <GridViewColumn x:Name="AmountOfTaxa" DisplayMemberBinding="{Binding AmountOfTaxa}" Header="Налог от сделки" Width="120"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button x:Name="button1" Content="Закрыть" HorizontalAlignment="Left" Height="30" Padding="4,0,0,0" Margin="1260,410,0,0" VerticalAlignment="Top" Width="130" Click="Button1_Click" Background="#ff8138" BorderBrush="White" Foreground="White" RenderTransformOrigin="0.468,1.567">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="8"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+    </Grid>
+</Window>

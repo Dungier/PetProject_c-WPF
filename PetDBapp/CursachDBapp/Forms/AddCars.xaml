@@ -1,0 +1,98 @@
+﻿<Window x:Class="CursachDBapp.Forms.AddCars"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CursachDBapp.Forms"
+        mc:Ignorable="d"
+        Title="AddCars"  Height="450" Width="800"
+        ResizeMode="NoResize"
+        WindowStyle="None"
+        Background="#124566"
+        WindowStartupLocation="CenterScreen">
+
+    <Grid>
+        <ListView x:Name="ListViewCars" Margin="10,240,156,10" Background="Gray" FontSize="10" Foreground="LightBlue" SelectionChanged="ListViewCars_SelectionChanged" >
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn x:Name="AutoID" DisplayMemberBinding="{Binding AutoID}" Header="Номер Автомобиля" Width="100"/>
+                    <GridViewColumn x:Name="CarName" DisplayMemberBinding="{Binding CarName}" Header="Наименование" Width="105"/>
+                    <GridViewColumn x:Name="CarFuel" DisplayMemberBinding="{Binding CarFuel}" Header="Топливо" Width="50"/>
+                    <GridViewColumn x:Name="CarPerfomance" DisplayMemberBinding="{Binding CarPerfomance}" Header="Мощность" Width="60"/>
+                    <GridViewColumn x:Name="CarBody" DisplayMemberBinding="{Binding CarBody}" Header="Кузов" Width="40"/>
+                    <GridViewColumn x:Name="CarRealese" DisplayMemberBinding="{Binding CarRealese}" Header="Год выпуска" Width="70"/>
+                    <GridViewColumn x:Name="CarColor" DisplayMemberBinding="{Binding CarColor}" Header="Цвет кузова" Width="70"/>
+                    <GridViewColumn x:Name="CarAvailable" DisplayMemberBinding="{Binding CarAvailable}" Header="Наличие автомобиля" Width="110"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+        <Label x:Name="lable1" Content="Тип топлива" HorizontalAlignment="Left" Height="25"  VerticalAlignment="Top" Width="70" Foreground="white" FontSize="10" HorizontalContentAlignment="Left" Margin="10,10,0,0"/>
+        <ComboBox x:Name="ComboBox1" HorizontalAlignment="Left" Height="20" Margin="10,35,0,0" VerticalAlignment="Top" Width="200" Foreground="gray" SelectionChanged="ComboBox1_SelectionChanged" FontSize="12" Loaded="ComboBox1_Loaded">
+            <ComboBox.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="8"/>
+                </Style>
+            </ComboBox.Resources>
+        </ComboBox>
+
+        <Label x:Name="lable2" Content="Тип кузова" HorizontalAlignment="Left" Height="25"  VerticalAlignment="Top" Width="70" Foreground="white" FontSize="10" HorizontalContentAlignment="Left" Margin="10,55,0,0"/>
+        <ComboBox x:Name="ComboBox2" HorizontalAlignment="Left" Height="20" Margin="10,80,0,0" VerticalAlignment="Top" Width="200" Foreground="gray" SelectionChanged="ComboBox2_SelectionChanged" FontSize="12" BorderBrush="#db569d" Background="#ff8138" Loaded="ComboBox2_Loaded">
+            <ComboBox.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="8"/>
+                </Style>
+            </ComboBox.Resources>
+        </ComboBox>
+
+        <Label x:Name="lable3" Content="Цвет кузова" HorizontalAlignment="Left" Height="25"  VerticalAlignment="Top" Width="70" Foreground="white" FontSize="10" HorizontalContentAlignment="Left" Margin="10,100,0,0"/>
+        <ComboBox x:Name="ComboBox3" HorizontalAlignment="Left" Height="20" Margin="10,125,0,0" VerticalAlignment="Top" Width="200" Foreground="gray" SelectionChanged="ComboBox3_SelectionChanged" FontSize="12" Loaded="ComboBox3_Loaded">
+            <ComboBox.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="8"/>
+                </Style>
+            </ComboBox.Resources>
+        </ComboBox>
+
+        <Label x:Name="lable4" Content="Наименование автомобиля" HorizontalAlignment="Left" Height="25"  VerticalAlignment="Top" Width="140" Foreground="white" FontSize="10" HorizontalContentAlignment="Left" Margin="232,10,0,0"/>
+        <ComboBox x:Name="ComboBox4" HorizontalAlignment="Left" Height="20" Margin="232,35,0,0" VerticalAlignment="Top" Width="200" Foreground="gray" SelectionChanged="ComboBox4_SelectionChanged" FontSize="12" Loaded="ComboBox4_Loaded">
+            <ComboBox.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="8"/>
+                </Style>
+            </ComboBox.Resources>
+        </ComboBox>
+
+        <Label x:Name="lable5" Content="Мощность двигателя" HorizontalAlignment="Left" Height="25"  VerticalAlignment="Top" Width="113" Foreground="white" FontSize="10" HorizontalContentAlignment="Left" Margin="232,55,0,0"/>
+        <ComboBox x:Name="ComboBox5" HorizontalAlignment="Left" Height="20" Margin="232,80,0,0" VerticalAlignment="Top" Width="200" Foreground="gray" SelectionChanged="ComboBox5_SelectionChanged" FontSize="12" Loaded="ComboBox5_Loaded">
+            <ComboBox.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="8"/>
+                </Style>
+            </ComboBox.Resources>
+        </ComboBox>
+
+        <Label x:Name="lable6" Content="Дата выхода" HorizontalAlignment="Left" Height="25"  VerticalAlignment="Top" Width="113" Foreground="white" FontSize="10" HorizontalContentAlignment="Left" Margin="232,100,0,0"/>
+        <DatePicker Name="TimePicker1" HorizontalAlignment="Left" Margin="232,122,0,0" VerticalAlignment="Top" Width="200" SelectedDateChanged="PresetTime" FontSize="14" Height="26" BorderBrush="#124566" Foreground="Gray" BorderThickness="0,1,1,1">
+            <DatePicker.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="8"/>
+                </Style>
+            </DatePicker.Resources>
+        </DatePicker>
+        <Button x:Name="button1" Content="Добавить" HorizontalAlignment="Left" Height="30" Padding="4,0,0,0" Margin="10,205,0,0" VerticalAlignment="Top" Width="100" Click="Button1_Click" Background="#ff8138" BorderBrush="White" Foreground="White">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="15"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="button2" Content="Закрыть" HorizontalAlignment="Left" Height="30" Margin="655,410,0,0" VerticalAlignment="Top" Width="135" Click="Button3_Click" Background="#ff8138" BorderBrush="White" Foreground="White" RenderTransformOrigin="-5.602,5.77">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="15"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+    </Grid>
+</Window>
