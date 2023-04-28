@@ -31,7 +31,7 @@ namespace CursachDBapp.Forms
         public Deals()
         {
             InitializeComponent();
-            cars = CarsFromBD.LoadCars();
+            cars = CarsFromBD.LoadCarsCarAvalible();
             ListViewCars.ItemsSource = cars;
             clients = ClientsFromDB.LoadClients();
             ListViewClients.ItemsSource = clients;
@@ -69,7 +69,7 @@ namespace CursachDBapp.Forms
             if (DealAns)
             {
                 MessageBox.Show("Сделка успешна");
-                ListViewCars.ItemsSource = CarsFromBD.LoadCars();
+                ListViewCars.ItemsSource = CarsFromBD.LoadCarsCarAvalible();
                 textBox1.Text = "";
                 ComboBox1.SelectedIndex = 0;
                 ComboBox2.SelectedIndex = 0;

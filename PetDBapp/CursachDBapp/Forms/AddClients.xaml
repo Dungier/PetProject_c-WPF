@@ -198,7 +198,7 @@
         </Style>
     </Window.Resources>
     <Grid>
-        <ListView x:Name="ListViewClients" Margin="10,188,173,10" Background="Gray" FontSize="13" Foreground="LightBlue" SelectionChanged="ListViewClients_SelectionChanged">
+        <ListView x:Name="ListViewClients" Margin="10,188,173,10" Background="LightGray" FontSize="13" Foreground="Black" SelectionChanged="ListViewClients_SelectionChanged">
             <ListView.View>
                 <GridView>
                     <GridViewColumn x:Name="ClientID" DisplayMemberBinding="{Binding ClientID}" Header="Идентификатор клиента" Width="160"/>

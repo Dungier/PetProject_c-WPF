@@ -442,7 +442,7 @@
 
     </Window.Resources>
     <Grid>
-        <ListView x:Name="ListViewEmp" Height="370" Margin="10,10,464,70" Background="Gray" FontSize="10" Foreground="LightBlue" SelectionChanged="ListViewEmp_SelectionChanged">
+        <ListView x:Name="ListViewEmp" Height="370" Margin="10,10,464,70" Background="LightGray" FontSize="10" Foreground="Black" SelectionChanged="ListViewEmp_SelectionChanged">
             <ListView.View>
                 <GridView>
                     <GridViewColumn DisplayMemberBinding="{Binding Path = EmpID}" Header="Номер сотрудника" Width="100"/>

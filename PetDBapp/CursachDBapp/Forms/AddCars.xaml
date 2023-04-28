@@ -12,7 +12,7 @@
         WindowStartupLocation="CenterScreen">
 
     <Grid>
-        <ListView x:Name="ListViewCars" Margin="10,240,156,10" Background="Gray" FontSize="10" Foreground="LightBlue" SelectionChanged="ListViewCars_SelectionChanged" >
+        <ListView x:Name="ListViewCars" Margin="10,240,156,10" Background="LightGray" FontSize="10" Foreground="LightBlue" SelectionChanged="ListViewCars_SelectionChanged" >
             <ListView.View>
                 <GridView>
                     <GridViewColumn x:Name="AutoID" DisplayMemberBinding="{Binding AutoID}" Header="Номер Автомобиля" Width="100"/>

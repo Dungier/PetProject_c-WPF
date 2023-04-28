@@ -69,7 +69,7 @@
         </Style>
     </Window.Resources>
     <Grid>
-        <ListView x:Name="ListViewCars" Height="250" Margin="10,340,10,10" Background="Gray" FontSize="10" Foreground="LightBlue" SelectionChanged="ListViewCars_SelectionChanged">
+        <ListView x:Name="ListViewCars" Height="250" Margin="10,340,10,10" Background="LightGray" FontSize="13" Foreground="Black" SelectionChanged="ListViewCars_SelectionChanged">
             <ListView.View>
                 <GridView>
                     <GridViewColumn x:Name="AutoID" DisplayMemberBinding="{Binding AutoID}" Header="Номер Автомобиля" Width="130"/>
@@ -79,12 +79,11 @@
                     <GridViewColumn x:Name="CarBody" DisplayMemberBinding="{Binding CarBody}" Header="Кузов" Width="60"/>
                     <GridViewColumn x:Name="CarRealese" DisplayMemberBinding="{Binding CarRealese}" Header="Год выпуска" Width="90"/>
                     <GridViewColumn x:Name="CarColor" DisplayMemberBinding="{Binding CarColor}" Header="Цвет кузова" Width="90"/>
-                    <GridViewColumn x:Name="CarAvailable" DisplayMemberBinding="{Binding CarAvailable}" Header="Наличие автомобиля" Width="130"/>
                 </GridView>
             </ListView.View>
         </ListView>
 
-        <ListView x:Name="ListViewClients" Height="250" Margin="10,85,173,265" Background="Gray" FontSize="13" Foreground="LightBlue" SelectionChanged="ListViewClients_SelectionChanged">
+        <ListView x:Name="ListViewClients" Height="250" Margin="10,85,173,265" Background="LightGray" FontSize="13" Foreground="Black" SelectionChanged="ListViewClients_SelectionChanged">
             <ListView.View>
                 <GridView>
                     <GridViewColumn x:Name="ClientID" DisplayMemberBinding="{Binding ClientID}" Header="Идентификатор клиента" Width="160"/>
