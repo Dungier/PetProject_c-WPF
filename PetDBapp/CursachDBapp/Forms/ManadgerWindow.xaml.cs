@@ -51,5 +51,11 @@ namespace CursachDBapp.Forms
         {
             Application.Current.Shutdown();
         }
+
+        private void Button7_Click(object sender, RoutedEventArgs e)
+        {
+            AddClients addClients = new AddClients();
+            addClients.Show();
+        }
     }
 }

@@ -13,21 +13,28 @@
     <Grid>
         <Label x:Name="lable1" Content="Добро пожаловать в систему, " HorizontalAlignment="Left" Height="25"  VerticalAlignment="Top" Width="280" Foreground="white" FontSize="10" HorizontalContentAlignment="Left" Margin="10,10,0,0"/>
         <Label x:Name="lable2" Content="Ваша должность:" HorizontalAlignment="Left" Height="25"  VerticalAlignment="Top" Width="224" Foreground="white" FontSize="10" HorizontalContentAlignment="Left" Margin="10,40,0,0"/>
-        <Button x:Name="button1" Content="Заключить сделку" HorizontalAlignment="Left" Height="30" Margin="10,0,0,0" VerticalAlignment="Center" Width="146" Click="button1_Click" Background="#ff8138" BorderBrush="White" Foreground="White" RenderTransformOrigin="-0.121,0.477">
+        <Button x:Name="button1" Content="Заключить сделку" HorizontalAlignment="Left" Height="30" Margin="10,115,0,0" VerticalAlignment="Top" Width="146" Click="button1_Click" Background="#ff8138" BorderBrush="White" Foreground="White" RenderTransformOrigin="-0.121,0.477">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="8"/>
                 </Style>
             </Button.Resources>
         </Button>
-        <Button x:Name="button2" Content="Сменить пользователя" HorizontalAlignment="Left" Height="30" Margin="10,120,0,0" VerticalAlignment="Top" Width="146" Click="button2_Click" Background="#ff8138" BorderBrush="White" Foreground="White" RenderTransformOrigin="0.51,0.569">
+        <Button x:Name="button2" Content="Сменить пользователя" HorizontalAlignment="Left" Height="30" Margin="172,115,0,0" VerticalAlignment="Top" Width="146" Click="button2_Click" Background="#ff8138" BorderBrush="White" Foreground="White" RenderTransformOrigin="0.51,0.569">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="8"/>
                 </Style>
             </Button.Resources>
         </Button>
-        <Button x:Name="button3" Content="Закрыть приложение" Height="30" Margin="10,155,214,0" VerticalAlignment="Top" Click="button3_Click" Background="#ff8138" BorderBrush="White" Foreground="White">
+        <Button x:Name="button3" Content="Закрыть приложение" Height="30" Margin="172,150,52,0" VerticalAlignment="Top" Click="button3_Click" Background="#ff8138" BorderBrush="White" Foreground="White">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="8"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="button7" Content="Добавление клиента" HorizontalAlignment="Left" Height="30" Margin="10,150,0,0" VerticalAlignment="Top" Width="146" Click="Button7_Click" Background="#ff8138" BorderBrush="White" Foreground="White" RenderTransformOrigin="-0.121,0.477">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="8"/>

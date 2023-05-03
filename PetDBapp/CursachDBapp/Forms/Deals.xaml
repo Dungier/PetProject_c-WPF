@@ -132,5 +132,21 @@
                 </Style>
             </TextBox.Resources>
         </TextBox>
+        <Label x:Name="lable4" Content="Клиент" HorizontalAlignment="Left" Height="30"  VerticalAlignment="Top" Width="126" Foreground="white" FontSize="12" HorizontalContentAlignment="Left" Margin="640,3,0,0" RenderTransformOrigin="0.497,0.503"/>
+        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="30" Padding="4,0,0,0" Margin="640,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" BorderBrush="#ff8138" MaxLength="40" FontSize="16" RenderTransformOrigin="0.049,0.502" Text="" TextChanged="textBox2_TextChanged">
+            <TextBox.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
+        <Label x:Name="lable5" Content="Автомобиль" HorizontalAlignment="Left" Height="30"  VerticalAlignment="Top" Width="126" Foreground="white" FontSize="12" HorizontalContentAlignment="Left" Margin="640,70,0,0" RenderTransformOrigin="0.497,0.503"/>
+        <TextBox x:Name="textBox3" HorizontalAlignment="Left" Height="30" Padding="4,0,0,0" Margin="640,35,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" BorderBrush="#ff8138" MaxLength="40" FontSize="16" RenderTransformOrigin="0.049,0.502" Text="" TextChanged="textBox3_TextChanged">
+            <TextBox.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
     </Grid>
 </Window>

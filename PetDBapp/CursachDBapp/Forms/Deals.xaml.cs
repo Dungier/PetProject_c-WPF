@@ -31,9 +31,9 @@ namespace CursachDBapp.Forms
         public Deals()
         {
             InitializeComponent();
-            cars = CarsFromBD.LoadCarsCarAvalible();
+            cars = CarsFromBD.LoadCarsCarAvalible("");
             ListViewCars.ItemsSource = cars;
-            clients = ClientsFromDB.LoadClients();
+            clients = ClientsFromDB.LoadClients("");
             ListViewClients.ItemsSource = clients;
         }
         private void ListViewCars_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -69,7 +69,7 @@ namespace CursachDBapp.Forms
             if (DealAns)
             {
                 MessageBox.Show("Сделка успешна");
-                ListViewCars.ItemsSource = CarsFromBD.LoadCarsCarAvalible();
+                ListViewCars.ItemsSource = CarsFromBD.LoadCarsCarAvalible("");
                 textBox1.Text = "";
                 ComboBox1.SelectedIndex = 0;
                 ComboBox2.SelectedIndex = 0;
@@ -115,6 +115,18 @@ namespace CursachDBapp.Forms
             NotaryCompany.Add("Worldwide Notary");
             ComboBox2.ItemsSource = NotaryCompany;
             ComboBox2.SelectedIndex = 0;
+        }
+
+        private void textBox2_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            cars = CarsFromBD.LoadCarsCarAvalible(textBox2.Text);
+            ListViewCars.ItemsSource = cars;
+        }
+
+        private void textBox3_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            clients = ClientsFromDB.LoadClients(textBox3.Text);
+            ListViewClients.ItemsSource = clients;
         }
     }
 }

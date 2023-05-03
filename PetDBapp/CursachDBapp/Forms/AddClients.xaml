@@ -198,6 +198,7 @@
         </Style>
     </Window.Resources>
     <Grid>
+
         <ListView x:Name="ListViewClients" Margin="10,188,173,10" Background="LightGray" FontSize="13" Foreground="Black" SelectionChanged="ListViewClients_SelectionChanged">
             <ListView.View>
                 <GridView>
@@ -229,21 +230,22 @@
                 </Style>
             </TextBox.Resources>
         </TextBox>
-        <TextBox Style="{DynamicResource TextBoxStyle2}" x:Name="textBox2" HorizontalAlignment="Left" Height="30" Padding="4,0,0,0" Margin="10,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" BorderBrush="#ff8138" MaxLength="40" FontSize="16" RenderTransformOrigin="0.049,0.502" Text="">
+        <Label x:Name="lable1" Content="Пол" HorizontalAlignment="Left" Height="30"  VerticalAlignment="Top" Width="160" Foreground="white" FontSize="12" HorizontalContentAlignment="Left" Margin="224,7,0,0" RenderTransformOrigin="0.497,0.503"/>
+        <ComboBox x:Name="ComboBox1" HorizontalAlignment="Left" Height="20" Margin="224,37,0,0" VerticalAlignment="Top" Width="200" Foreground="gray" SelectionChanged="ComboBox1_SelectionChanged" FontSize="12" Loaded="ComboBox1_Loaded">
+            <ComboBox.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="8"/>
+                </Style>
+            </ComboBox.Resources>
+        </ComboBox>
+        <TextBox Style="{DynamicResource TextBoxStyle3}" x:Name="textBox3" HorizontalAlignment="Left" Height="30" Padding="4,0,0,0" Margin="10,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" BorderBrush="#ff8138" MaxLength="40" FontSize="16" RenderTransformOrigin="0.049,0.502" Text="">
             <TextBox.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="5"/>
                 </Style>
             </TextBox.Resources>
         </TextBox>
-        <TextBox Style="{DynamicResource TextBoxStyle3}" x:Name="textBox3" HorizontalAlignment="Left" Height="30" Padding="4,0,0,0" Margin="10,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" BorderBrush="#ff8138" MaxLength="40" FontSize="16" RenderTransformOrigin="0.049,0.502" Text="">
-            <TextBox.Resources>
-                <Style TargetType="Border">
-                    <Setter Property="CornerRadius" Value="5"/>
-                </Style>
-            </TextBox.Resources>
-        </TextBox>
-        <TextBox Style="{DynamicResource TextBoxStyle4}" x:Name="textBox4" HorizontalAlignment="Left" Height="30" Padding="4,0,0,0" Margin="10,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" BorderBrush="#ff8138" MaxLength="40" FontSize="16" RenderTransformOrigin="0.049,0.502" Text="">
+        <TextBox Style="{DynamicResource TextBoxStyle4}" x:Name="textBox4" HorizontalAlignment="Left" Height="30" Padding="4,0,0,0" Margin="10,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" BorderBrush="#ff8138" MaxLength="40" FontSize="16" RenderTransformOrigin="0.049,0.502" Text="">
             <TextBox.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="5"/>
@@ -257,5 +259,14 @@
                 </Style>
             </DatePicker.Resources>
         </DatePicker>
+        <Label x:Name="lable1_Copy" Content="Дата рождения" HorizontalAlignment="Left" Height="30"  VerticalAlignment="Top" Width="160" Foreground="white" FontSize="12" HorizontalContentAlignment="Left" Margin="10,120,0,0" RenderTransformOrigin="0.497,0.503"/>
+        <Label x:Name="lable4" Content="Сортировка по ФИО" HorizontalAlignment="Left" Height="30"  VerticalAlignment="Top" Width="126" Foreground="white" FontSize="12" HorizontalContentAlignment="Left" Margin="648,10,0,0" RenderTransformOrigin="0.497,0.503"/>
+        <TextBox Style="{DynamicResource TextBoxStyle1}" x:Name="textBox2" HorizontalAlignment="Left" Height="30" Padding="4,0,0,0" Margin="648,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" BorderBrush="#ff8138" MaxLength="40" FontSize="16" RenderTransformOrigin="0.049,0.502" Text="" TextChanged="textBox2_TextChanged">
+            <TextBox.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
     </Grid>
 </Window>

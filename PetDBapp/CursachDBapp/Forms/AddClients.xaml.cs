@@ -23,10 +23,11 @@ namespace CursachDBapp.Forms
         List<ClientsList> clients = new List<ClientsList>();
         private int ClientsID {  get; set; }
         private DateTime BirthdayDate { get; set; }
+        private string gender { get; set; }
         public AddClients()
         {
             InitializeComponent();
-            clients = ClientsFromDB.LoadClients();
+            clients = ClientsFromDB.LoadClients("");
             ListViewClients.ItemsSource = clients;
         }
 
@@ -41,24 +42,14 @@ namespace CursachDBapp.Forms
 
         private void Button1_Click(object sender, RoutedEventArgs e)
         {
-            if (textBox1.Text != "" || textBox2.Text != "" || textBox3.Text != "" || textBox4.Text != "")
+            if (textBox1.Text != "" && textBox3.Text != "" && textBox4.Text != "")
             {
-                string gender = "";
                 bool ClearTextBoxes = false;
-                if (textBox2.Text == "Женский")
-                {
-                    gender = "F";
-                }
-                else if (textBox2.Text == "Мужской")
-                {
-                    gender = "M";
-                }
                 ClearTextBoxes = AddDelCients.AddClient(textBox1.Text, gender, BirthdayDate, textBox3.Text, textBox4.Text);
-                ListViewClients.ItemsSource = ClientsFromDB.LoadClients();
+                ListViewClients.ItemsSource = ClientsFromDB.LoadClients("");
                 if (ClearTextBoxes == true)
                 {
                     textBox1.Text = "";
-                    textBox2.Text = "";
                     textBox3.Text = "";
                     textBox4.Text = "";
                 }
@@ -76,6 +67,32 @@ namespace CursachDBapp.Forms
         private void PresetTime(object sender, SelectionChangedEventArgs e)
         {
             BirthdayDate = TimePicker1.SelectedDate.Value;
+        }
+
+        private void ComboBox1_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (ComboBox1.SelectedItem.ToString() == "Женский")
+            {
+                gender = "F";
+            }
+            else if (ComboBox1.SelectedItem.ToString() == "Мужской")
+            {
+                gender = "M";
+            }
+        }
+
+        private void ComboBox1_Loaded(object sender, RoutedEventArgs e)
+        {
+            List<string> gender = new List<string>();
+            gender.Add("Мужской");
+            gender.Add("Женский");
+            ComboBox1.ItemsSource = gender;
+        }
+
+        private void textBox2_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            clients = ClientsFromDB.LoadClients(textBox2.Text);
+            ListViewClients.ItemsSource = clients;
         }
     }
 }
