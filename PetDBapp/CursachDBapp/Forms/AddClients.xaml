@@ -3,7 +3,6 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:CursachDBapp.Forms"
         mc:Ignorable="d"
         Title="AddClients" Height="450" Width="800"
         ResizeMode="NoResize"
@@ -245,7 +244,7 @@
                 </Style>
             </TextBox.Resources>
         </TextBox>
-        <TextBox Style="{DynamicResource TextBoxStyle4}" x:Name="textBox4" HorizontalAlignment="Left" Height="30" Padding="4,0,0,0" Margin="10,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" BorderBrush="#ff8138" MaxLength="40" FontSize="16" RenderTransformOrigin="0.049,0.502" Text="">
+        <TextBox Style="{DynamicResource TextBoxStyle4}" x:Name="textBox4" HorizontalAlignment="Left" Height="30" Padding="4,0,0,0" Margin="10,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" BorderBrush="#ff8138" MaxLength="11" FontSize="16" RenderTransformOrigin="0.049,0.502" Text="">
             <TextBox.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="5"/>

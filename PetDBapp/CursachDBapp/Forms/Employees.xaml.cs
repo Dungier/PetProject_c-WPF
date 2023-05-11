@@ -30,7 +30,7 @@ namespace CursachDBapp.Forms
         public Employees()
         {
             InitializeComponent();
-            emps = EmpFromBD.LoadEmp("");
+            emps = EmpFromBD.LoadEmp("", "");
             ListViewEmp.ItemsSource = emps;
             EmpID = 0;
         }
@@ -41,7 +41,7 @@ namespace CursachDBapp.Forms
             {
                 bool ClearTextBoxes;
                 ClearTextBoxes =  AddDelEmp.AddEmp(textBox1.Text, position, gender, PresetDateTime, textBox4.Text, textBox5.Text, textBox6.Text, textBox7.Text);
-                ListViewEmp.ItemsSource = EmpFromBD.LoadEmp("");
+                ListViewEmp.ItemsSource = EmpFromBD.LoadEmp("", "");
                 if (ClearTextBoxes == true)
                 {
                     textBox1.Text = "";
@@ -62,7 +62,7 @@ namespace CursachDBapp.Forms
             if (EmpID != 0)
             {
                 AddDelEmp.DelEmp(EmpID);
-                ListViewEmp.ItemsSource = EmpFromBD.LoadEmp("");
+                ListViewEmp.ItemsSource = EmpFromBD.LoadEmp("", "");
             }
         }
 
@@ -126,7 +126,7 @@ namespace CursachDBapp.Forms
 
         private void ComboBox3_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            emps = EmpFromBD.LoadEmpPosition(ComboBox3.SelectedIndex + 1);
+            emps = EmpFromBD.LoadEmpPosition(textBox2.Text, (ComboBox3.SelectedIndex + 1).ToString());
             ListViewEmp.ItemsSource = emps;
         }
 
@@ -142,8 +142,16 @@ namespace CursachDBapp.Forms
 
         private void textBox2_TextChanged(object sender, TextChangedEventArgs e)
         {
-            emps = EmpFromBD.LoadEmp(textBox2.Text);
-            ListViewEmp.ItemsSource = emps;
+            if(ComboBox3.SelectedIndex + 1 == 0)
+            {
+                emps = EmpFromBD.LoadEmp(textBox2.Text, "");
+                ListViewEmp.ItemsSource = emps;
+            }
+            else
+            {
+                emps = EmpFromBD.LoadEmp(textBox2.Text, (ComboBox3.SelectedIndex + 1).ToString());
+                ListViewEmp.ItemsSource = emps;
+            }
         }
     }
 }

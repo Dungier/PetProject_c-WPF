@@ -12,13 +12,13 @@ namespace CursachDBapp.Model
 {
     internal class EmpFromBD
     {
-        public static List<EmpList> LoadEmp(string fio)
+        public static List<EmpList> LoadEmp(string fio, string pos)
         {
             List<EmpList> emps = new List<EmpList>();
             using (SqlConnection connection = new SqlConnection(Connection.ConnString))
             {
                 connection.Open();
-                string sqlExp = $"select EmpID, FIO, StatusName from Employees emp join EmployeesPost on emp.Position = EmpStatusID where FIO like '%{fio}%' ";
+                string sqlExp = $"select EmpID, FIO, StatusName from Employees emp join EmployeesPost on emp.Position = EmpStatusID where FIO like '%{fio}%' and Position like '%{pos}%'";
                 SqlCommand cmd = new SqlCommand(sqlExp, connection);
                 SqlDataReader reader = cmd.ExecuteReader();
                 reader.Read();
@@ -36,14 +36,14 @@ namespace CursachDBapp.Model
         }
 
 
-        public static List<EmpList> LoadEmpPosition(int pos)
+        public static List<EmpList> LoadEmpPosition(string fio, string pos)
         {
             List<EmpList> emps = new List<EmpList>();
             using (SqlConnection connection = new SqlConnection(Connection.ConnString))
             {
                 connection.Open();
                 string sqlExp = "select EmpID, FIO, StatusName from Employees"
-                    + " join EmployeesPost on Position = EmpStatusID" + $" where Position like '%{pos}%'";
+                    + " join EmployeesPost on Position = EmpStatusID" + $" where Position like '%{pos}%' and FIO like '%{fio}%'";
                 SqlCommand cmd = new SqlCommand(sqlExp, connection);
                 SqlDataReader reader = cmd.ExecuteReader();
                 reader.Read();
